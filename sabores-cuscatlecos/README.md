@@ -2,7 +2,7 @@
 
 Landing page de **recetas tradicionales salvadoreñas** construida con **Next.js 16 (App Router)** y **Supabase** como base de datos serverless. Desplegada en **Vercel**.
 
-🔗 **Demo en producción:** `https://TU-PROYECTO.vercel.app` <!-- reemplaza con tu URL -->
+🔗 **Demo en producción:** https://sabores-cuscatlecos-28pv.vercel.app/recetas
 
 ---
 
@@ -66,6 +66,7 @@ Dos tablas relacionadas:
 
 **Row Level Security (RLS)** activado en ambas tablas, con una única política `SELECT` para los roles `anon` y `authenticated`. No hay políticas de `INSERT`, `UPDATE` ni `DELETE`, así que con la clave pública **solo se puede leer**; los cambios se hacen desde el dashboard de Supabase.
 
+
 ## 🚀 Instalación local
 
 **Requisitos:** Node.js 20.9 o superior y una cuenta gratuita en [Supabase](https://supabase.com).
@@ -103,8 +104,8 @@ Dos tablas relacionadas:
 
 | Variable | Descripción | Dónde obtenerla |
 |---|---|---|
-| `SUPABASE_URL` | URL del proyecto Supabase | Project Settings → API → Project URL |
-| `SUPABASE_ANON_KEY` | Clave pública `anon` (o `publishable`) | Project Settings → API Keys |
+NEXT_PUBLIC_SUPABASE_URL=https://gksvdjlcggvyvjinxoez.supabase.co
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_HDiHKs-X_yhSQXBWiaeoig_dlf6jSR0
 
 > Las variables **no** llevan el prefijo `NEXT_PUBLIC_` porque solo se usan en Server Components: se leen en el servidor y nunca se envían al navegador.
 > ⚠️ Nunca uses ni subas la `service_role` key. El archivo `.env.local` está en `.gitignore`.
