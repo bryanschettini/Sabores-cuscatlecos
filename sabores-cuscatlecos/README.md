@@ -2,7 +2,7 @@
 
 Landing page de **recetas tradicionales salvadoreñas** construida con **Next.js 16 (App Router)** y **Supabase** como base de datos serverless. Desplegada en **Vercel**.
 
-🔗 **Demo en producción:** https://sabores-cuscatlecos-28pv.vercel.app/recetas
+🔗 **Demo en producción:** https://sabores-cuscatlecos-m3aq-re79ezq79-schettini.vercel.app/
 
 ---
 
